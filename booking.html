@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Booking Details</title>
+    <style>
+        body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        }
+        .booking-form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+        display: flex;
+        flex-direction: column;
+        }
+        form input, form select, form button {
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+        }
+        </style>
+        </head>
+        <body>
+        <div class="booking-form">
+        <h2>Booking Details</h2>
+        <form action="confirmation.html" method="post">
+        <input type="hidden" name="hotel" value="Hotel 1">
+        <input type="hidden" name="price" value="100">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+        <option value="credit">Credit Card</option>
+        <option value="debit">Debit Card</option>
+        <option value="paypal">PayPal</option>
+        </select>
+        <button type="submit">Confirm Booking</button>
+        </form>
+        </div>
+    </body>
+    </html>        
